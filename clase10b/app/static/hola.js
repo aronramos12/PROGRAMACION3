@@ -1,0 +1,3 @@
+function digaHola() {
+    alert("Xopalaope")
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/main.css"/>
+    <link rel="shortcut icon" type="icon" href="../static/maze.ico"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body background="https://image.freepik.com/free-vector/hexagonal-pattern_1051-833.jpg" bgcolor="FFFFFF" style=" background-size:100%; background-repeat; no-repeat background-attachment;" bgproperties="fixed">
+    <hr color="crimson" size="15" width="100%" style="border:0px;" >
+        <div id="contenedor">
+                <img id="logo" src="../static/logomaze.png" height="67px" width="275px" align="left">
+
+                <hr color="crimson" size="5" width="100%" style="border:0px;">
+                <center>
+                    <br><FONT FACE="Pricedown"; size="3">Aqui estan sus ultimas transacciones</FONT> <h1 width="100%" style="border:0px;" color="000000"></h1><br>
+                </center>
+            <div align="center">
+               <table border="2px" bgcolor="white" style="color:black" class="table">
+                     <thead>
+                         <tr>
+                             <th><p>Transacciones#</p></th>
+                             <th><p>Cantidad B/.</p></th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                                <td><p>#1</p></td>
+                                <td><p>B/. {{ plata[0] }}</p></td>
+                        </tr>
+                        <tr>
+                                <td><p>#2</p></td>
+                                <td><p>B/. {{ plata[1] }}</p></td>
+                        </tr>
+                        <tr>
+                                <td><p>#3</p></td>
+                                <td><p>B/. {{ plata[2] }}</p></td>
+                        </tr>
+                        <tr>
+                                <td><p>#4</p></td>
+                                <td><p>B/. {{ plata[3] }}</p></td>
+                        </tr>
+                        <tr>
+                                <td><p>Total:</p></td>
+                                <td><p>B/. {{ suma }}</p></td>
+                        </tr>
+                     </tbody>
+               </table>
+                <form action="/deposit" method="POST">
+                    <button type="submit" style="width:200px; height:50px;background-color:crimson;border:crimson;color:white; ">Atras</button>
+                </form>
+            </div>
+        </div>
+
+</body>
+</html>
